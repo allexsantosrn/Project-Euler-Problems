@@ -20,7 +20,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		List<Integer> numeros = new ArrayList<>();
+		List<Integer> numeros = new ArrayList<Integer>();
 
 		int somafinal = 0;
 
@@ -39,7 +39,7 @@ public class Main {
 
 	public static List<Integer> gerarLista() {
 
-		List<Integer> listanumeros = new ArrayList<>();
+		List<Integer> listanumeros = new ArrayList<Integer>();
 
 		for (int i = 0; i < 1000; i++) {
 
