@@ -45,7 +45,7 @@ public class Main {
 
 			if ((i % 3 == 0) || (i % 5 == 0)) {
 
-				listanumeros.add(i); // Armazenando na lista os números (de 0 a 999) divisíveis por 3 ou 5.
+				listanumeros.add(i); //Armazenando na lista os números (de 0 a 999) divisíveis por 3 ou 5.
 			}
 
 		}
