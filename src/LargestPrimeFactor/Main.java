@@ -7,44 +7,57 @@ package LargestPrimeFactor;
  * @author Alexandre
  *
  */
+
 public class Main {
+
+	/**
+	 * 
+	 * Método main. Invoca o método para geração do máximo fator comum.
+	 */
 
 	public static void main(String[] args) {
 
 		Long num = 600851475143L;
 
-		int maxdiv = 0;
+		int maxfat = 0;
 
-		maxdiv = gerarMaxDiv(num);
+		maxfat = gerarMaxFatorPrimo(num);
 
-		System.out.println("Resultado Final: " + maxdiv);
+		System.out.println("Resultado Final: " + maxfat);
 
 	}
 
-	public static int gerarMaxDiv(Long numero) {
+	/**
+	 * Método para retorno do máximo fator primo do número informado.
+	 * 
+	 * @param Número - Long
+	 * @return int - Máximo fator primo
+	 */
+
+	public static int gerarMaxFatorPrimo(Long numero) {
 
 		Long resto = numero;
 
-		int maxdiv = 0;
+		int maxfator = 0;
 
 		for (int i = 2; i <= numero; i++) {
 
 			if (resto % i == 0) {
 
-				resto = resto / i; //Atualizando o valor do resto.
-				
+				resto = resto / i; // Atualizando o valor do resto.
+
 				if (resto == 1) {
 
-					maxdiv = i; //Divisor máximo recebe valor de i.
+					maxfator = i; // Divisor máximo recebe valor de i.
 					break;
 				}
-				
-				i = i - 1; //Fixando o valor do divisor para a próxima iteração.
-			}		
+
+				i = i - 1; // Fixando o valor do divisor para a próxima iteração.
+			}
 
 		}
 
-		return maxdiv;
+		return maxfator;
 	}
 
 }

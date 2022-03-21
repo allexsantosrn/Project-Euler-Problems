@@ -57,7 +57,7 @@ public class Main {
 
 			if ((numcalc <= 4000000) && (numcalc % 2 == 0)) {
 
-				listanumeros.add(numcalc); //Armazenando na lista os números de fibonacci pares menores que 4000000.
+				listanumeros.add(numcalc); // Armazenando na lista os números de fibonacci pares menores que 4000000.
 			}
 
 		}
